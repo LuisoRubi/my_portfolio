@@ -31,32 +31,69 @@ body {
     box-sizing: border-box;
 }
 
-.section {
+ul{
+    list-style: none;
+}
 
-background: var(--bg-black-900);
-min-height: 100vh;
-display: block;
-position: fixed;
-left: 270px;
-top: 0;
-right: 0;
-z-index: 0;
-opacity: 1;
+.section {
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
 }
 
 .aside {
-
-width: 270px;
-background: var(--bg-black-100);
-position: fixed;
-left: 0;
-top: 0;
-height: 100%;
-z-index: 10;
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    padding: 30px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.aside .nav-toggler{
+    
 }
 
-.logo img {
+.logo{
+    position: absolute; /* Coloca el logo de forma absoluta */
+    top: 0; /* Ajusta al borde superior */
+    left: 0;
+    right: 0; /* Ajusta al borde izquierdo */
+    padding: 38px;
+}
+.logo img{
     width: 200px;
     height: auto;
+}
 
+.aside .nav li{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .nav li a{
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+
+.aside .nav li a.active{
+    color: #d35400;
+}
+.aside .nav li a i{
+    margin-right: 15px;
 }
