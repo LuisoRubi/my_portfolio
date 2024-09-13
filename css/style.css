@@ -75,6 +75,7 @@ ul{
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 60px;
 }
 .row{
     display: flex;
@@ -236,4 +237,16 @@ h3.my-profession{
 .home-img img{
     margin: auto;
     height: 400px;
+}
+
+/* About */
+
+.about .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-color: aqua;
 }
