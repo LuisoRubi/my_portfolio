@@ -37,9 +37,9 @@ ul{
     padding: 0 30px;
     opacity: 1;
 }
-/* .hidden{
+.hidden{
     display: none !important;
-} */
+}
 .main-content{
     padding-left: 270px;
 
@@ -379,4 +379,44 @@ h3.my-profession{
     left: 7px;
     top: 0;
     background-color: #d35400;
+}
+.about .about-content .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #d35400;
+}
+.about .about-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.about-content .timeline .timeline-date .fa{
+    margin-right: 10px;
+}
+.about-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+}
+.about-content .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 17px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+
+/* portfolio */
+.portfolio .portfolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.portfolio .portfolio-heading h2{
+    color: var(--text-black-900);
+    font-weight: 500;
 }
